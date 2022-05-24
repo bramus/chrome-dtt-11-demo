@@ -1,0 +1,28 @@
+{
+    "name": "chrome-dtt-11-demo",
+    "version": "1.0.0",
+    "description": "Demo Page for the DevTools Tips 11 Video",
+    "source": "src/index.html",
+    "scripts": {
+        "clean:output": "rimraf dist",
+        "start": "npm run clean:output && parcel",
+        "build": "npm run clean:output && parcel build",
+        "lint": "prettier --check 'src/**/*.{css,js,html}'",
+        "prettier": "prettier --write 'src/**/*.{css,js,html}'",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "browserslist": "> 0.5%, last 2 versions, not dead",
+    "@parcel/transformer-css": {
+        "drafts": {
+            "nesting": true
+        }
+    },
+    "author": "Bramus Van Damme",
+    "license": "MIT",
+    "devDependencies": {
+        "open-props": "^1.3.16",
+        "parcel": "^2.5.0",
+        "prettier": "^2.6.2",
+        "rimraf": "^3.0.2"
+    }
+}

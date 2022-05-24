@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DevTools Tips: Console API with @jecfish and @bramus</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="Description" content="Demo page for 'DevTools Tips: Console API' with @jecfish and @bramus" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script src="scripts.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <h1>
+                <img
+                    src="https://raw.githubusercontent.com/ChromeDevTools/devtools-logo/master/logos/png/devtools-circle-256.png"
+                    alt="The Chrome DevTools logo"
+                    class="logo"
+                    width="128"
+                    height="128"
+                />
+                DevTools Tips: Console API
+            </h1>
+
+            <section>
+                <h1>Logging a message with <code>console.log()</code></h1>
+                <button class="button" id="button-log-hello">console.log('Hello 👋')</button>
+            </section>
+
+            <section>
+                <h1>Using log levels</h1>
+                <button class="button" id="button-loglevels-log">console.log()</button>
+                <button class="button" id="button-loglevels-warn">console.warn()</button>
+                <button class="button" id="button-loglevels-error">console.error()</button>
+            </section>
+
+            <section>
+                <h1>Logging Variables</h1>
+                <button class="button" id="button-variables-number">++Number</button>
+                <button class="button" id="button-variables-object">Object</button>
+                <button class="button" id="button-variables-array">Array</button>
+            </section>
+
+            <section>
+                <h1><code>console.table()</code> &amp; <code>console.dir()</code></h1>
+                <button class="button" id="button-formatted-table">console.table()</button>
+                <button class="button" id="button-formatted-dir">console.dir()</button>
+            </section>
+
+            <section>
+                <h1>Grouping Log Messages</h1>
+                <button class="button" id="button-grouping-group">console.group()</button>
+                <button class="button" id="button-grouping-groupend">console.groupEnd()</button>
+                <button class="button" id="button-grouping-groupcollapsed">console.groupCollapsed()</button>
+                <button class="button" id="button-grouping-namedgroup">console.group(label)</button>
+            </section>
+        </main>
+    </body>
+</html>
