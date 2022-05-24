@@ -15,6 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('I am logged using console.error()');
     });
 
+    // Clear
+    document.getElementById('button-clear').addEventListener('click', () => {
+        console.clear();
+    });
+
     // Variables
     let clickCount = 0;
     document.getElementById('button-variables-number').addEventListener('click', () => {
