@@ -22,7 +22,7 @@ body {
 
     inline-size: min-content;
 
-    &:is(:hover, :focus) {
+    &:is(:hover, :active) {
         cursor: pointer;
         color: var(--blue-0);
         background-color: var(--blue-5);
