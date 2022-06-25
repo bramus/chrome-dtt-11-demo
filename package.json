@@ -5,8 +5,10 @@
     "source": "src/index.html",
     "scripts": {
         "clean:output": "rimraf dist",
-        "start": "npm run clean:output && parcel",
-        "build": "npm run clean:output && parcel build --public-url .",
+        "prestart": "npm run clean:output",
+        "start": "parcel",
+        "prebuild": "npm run clean:output",
+        "build": "parcel build --public-url .",
         "lint": "prettier --check 'src/**/*.{css,js,html}'",
         "prettier": "prettier --write 'src/**/*.{css,js,html}'",
         "test": "echo \"Error: no test specified\" && exit 1"
